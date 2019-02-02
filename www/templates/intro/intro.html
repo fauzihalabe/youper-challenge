@@ -1,0 +1,24 @@
+<ion-view id="intro" class="white-bg" animation="no-animation">
+    <!-- CONTAINER -->
+    <div class="fullDiv fadein" ng-if="init">
+        <div class="defaultPagePadding">
+            <div ng-if="!userName">
+                <input ng-model="user.name" class="centerInput customInput marginHalf" type="text" placeholder="Como você se chama?">
+                <div class="divBot"></div>
+            </div>
+
+            <!-- IF USER NAME EXIST -->
+            <div class="fade" ng-hide="!show">
+                <div ng-if="userName" class="divUsername fadeOut">
+                    <div class="typewriter classFit">
+                        <h3>Hi, {{userName}}</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FLOAT BUTTON -->
+    <img ng-if="!userName && init" ng-click="saveUserName()" src="img/arrow.png" class="actionButton">
+    </div>
+</ion-view>

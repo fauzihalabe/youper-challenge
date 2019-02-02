@@ -1,0 +1,73 @@
+<ion-view id="home" class="white-bg" animation="no-animation">
+    <ion-content>
+        <ion-refresher on-refresh="refreshPage()">
+        </ion-refresher>
+    </ion-content>
+
+
+
+
+    <!-- LOADING -->
+    <div class="fullDiv fade" ng-hide="!loading">
+        <div class="fade">
+            <div class="divUsername">
+                <div class="classFit">
+                    <h3 class="animate-flicker">Loading...</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div ng-hide="loading">
+        <!-- CONTAINER -->
+        <div class="fullDiv mgTopiPhoneX">
+            <div class="defaultPagePadding">
+
+                <!-- AVATAR -->
+                <div class="item-avatar avatarDiv">
+                    <img ng-click="getImage()" ng-if="!user.avatar" class="avatarImg" src="img/avatar.jpg">
+                    <img ng-click="getImage()" ng-if="user.avatar" class="avatarImg" src="{{user.avatar}}">
+
+                    <p ng-click="changeName()" class="userName">{{user.name}}</p>
+                </div>
+
+                <!-- NOTIFICATIONS -->
+                <img ng-click="alertNotifications()" ng-if="!notificationAlert" class="notificationsDiv" src="img/notification.png">
+                <img ng-click="goToNotifications()" ng-if="notificationAlert" class="notificationsDiv" src="img/alert.png">
+
+                <!-- CONTAINER CHAT -->
+                <div class="mg-top-chatDiv">
+                    <!-- MESSAGE -->
+                    <div ng-repeat="m in chat" class="fadein">
+                        <div ng-if="m.from == 'youper'" class="flexYouper">
+                            <div class="messageDiv">
+                                {{m.message}}
+                            </div>
+                        </div>
+
+                        <div ng-if="m.from == 'user'" class="flexUser">
+                            <div class="messageDivUser">
+                                {{m.message}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="containerFooter fadeIn">
+            <div class="defaultPagePadding custFooter">
+                <div class="row">
+                    <div class="col col-90">
+                        <textarea ng-model="message" maxlength="25" placeholder="Type here..." class="footerTxt"></textarea>
+                    </div>
+                    <div class="col">
+                        <img ng-click="sendMessage()" class="sendIncon" src="img/arrow.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </ion-content>
+</ion-view>

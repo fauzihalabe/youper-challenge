@@ -1,0 +1,42 @@
+<ion-view id="notifications" class="white-bg" animation="no-animation">
+    <div class="bar bar-header mgTopiPhoneX" ng-hide="loading">
+        <button ng-click="back()" class="button icon ion-chevron-left transButton"></button>
+        <!-- <h1 cl ass="title">Header Buttons</h1>
+        <button class="button">Edit</button> -->
+    </div>
+
+    <!-- LOADING -->
+    <div class="fullDiv fade" ng-hide="!loading">
+        <div class="fade">
+            <div class="divUsername">
+                <div class="classFit">
+                    <h3 class="animate-flicker">Loading...</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div ng-hide="loading" style="margin-top: 50px">
+        <!-- CONTAINER -->
+        <div class="fullDiv mgTopiPhoneX2">
+            <div class="defaultPagePadding">
+                <!-- DETAILS -->
+                <div class="notificationCard" ng-if="!showList">
+                    <div ng-click="close()" class="closeDiv">x</div>
+                    <p class="nDate">{{details.createdAt._seconds * 1000 | date:'dd/MM/yyyy'}}</p>
+                    <h4 class="nTitle">{{details.title}}</h4>
+                    <h5 class="nBody">{{details.body}}</h5>
+                    <img class="imageNot" ng-if="details.image" src="{{details.imagesrc}}">
+                </div>
+
+                <!-- ITEMS -->
+                <div ng-repeat="n in notifications" class="notificationCard" ng-if="showList">
+                    <p class="nDate">{{n.createdAt._seconds * 1000 | date:'dd/MM/yyyy'}}</p>
+                    <h4 class="nTitle">{{n.title}}</h4>
+                    <h5 class="nBody">{{n.body | limitTo:20}}...</h5>
+                    <div class="btnViewAll" ng-click="view(n)">View all</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</ion-view>

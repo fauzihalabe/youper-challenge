@@ -1,1 +1,371 @@
-/* Empty. Add your own CSS if you like */
+@import url('https://fonts.googleapis.com/css?family=Montserrat: 400, 700');
+* {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.white-bg {
+    background-color: #fff;
+}
+
+.fullDiv {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.defaultPagePadding {
+    padding: 20px
+}
+
+.centerInput {
+    margin-left: 5%;
+    width: 90%
+}
+
+.customInput {
+    font-size: 18px !important;
+    color: #feab40 !important; 
+}
+
+.divBot {
+    margin-left: 5.5%;
+    width: 90%;
+    height: 3px;
+    background-color: #feab40;
+    border-radius: 100px
+}
+
+::placeholder {
+    font-style: italic;
+  }
+
+.marginHalf {
+    margin-top: 75%
+}
+
+.actionButton {
+    width: 13%;
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+}
+
+/* CUSTOM POPUP */
+.popup-container.active .popup {
+    padding: 15px;
+    border-radius: 5px
+}
+.popup-title {
+    font-weight: 700;
+}
+.popup-buttons .button {
+    background-color: #feab40;
+    border-radius: 100px
+}
+.button.button-positive.activated {
+    background-color: #feac408e;
+    border: none
+}
+
+/* CUSTOM LOADING */
+.loading-container .loading {
+    background-color: #feac40cf;
+    border-radius: 100px;
+    width: 50%
+}
+
+.avatarDiv {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.item-avatar > img {
+    max-width: 50px !important;
+    max-height: 50px !important;
+    width: 50px;
+    height: 50px;
+    border: solid 2px rgb(203, 203, 203);
+    position: relative !important;
+    top: 0px !important;
+    left: 0px !important
+}
+
+.defaultAvatar {
+    background-image: url('../img/avatar.jpg');
+}
+
+.item-avatar {
+    padding-left: 0px !important;
+    min-height: 50px !important
+}
+
+.notificationsDiv {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    width: 30px;
+    height: 30px; 
+}
+
+.userName {
+    display: inline;
+    position: absolute;
+    top: 15px;
+    left: 60px;
+    color: rgb(203, 203, 203);
+    font-size: 16px
+}
+
+.mg-top-chatDiv {
+    margin-top: 25%
+}
+
+.flexYouper {
+    display: flex; 
+    justify-content: start
+}
+
+.flexUser {
+    display: flex; 
+    justify-content: flex-end
+}
+
+.messageDiv {
+    background: #feab40;
+    width: fit-content;
+    padding: 7.5px 15px;
+    border-radius: 100px;
+    color: #fff;
+    border: 1.3px solid rgb(227, 227, 227);
+    margin-top: 15px;
+}
+
+
+.messageDivUser {
+    background: #e6e6e6;
+    width: fit-content;
+    padding: 7.5px 15px;
+    border-radius: 100px;
+    color: rgb(91, 91, 91);
+    border: 1.3px solid rgb(227, 227, 227);
+    margin-top: 15px;
+}
+
+.containerFooter {
+    background: #f6f6f6;
+    position: absolute;
+    bottom: 0;
+    height: 10%;
+    width: 100%;
+    padding-bottom: 70px;
+}
+
+.footerTxt {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    color: rgb(77, 77, 77)
+}
+
+.sendIncon {
+    width: 10%;
+    position: absolute;
+    top: 17px;
+    right: 17px;
+}
+
+.custFooter {
+    padding-top: 15px;
+}
+
+.fadein {
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+ 
+.divUsername {
+    width: 100%;
+    text-align: center;
+    margin-top: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fade.ng-hide {
+    transition:0.5s linear all;
+    opacity:0;
+}
+
+.nTitle {
+    color: #717171;
+    font-weight: 700;
+    margin-top: 20px
+}
+
+.nDate {
+    opacity: 0.5;
+    font-size: 10px;
+    margin-bottom: 0px;
+    width: fit-content;
+}
+
+.nBody {
+    color: #717171;
+    font-weight: 700
+}
+
+.notificationCard {
+    background: rgb(239, 239, 239);
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.btnViewAll {
+    background: #feab40;
+    padding: 10px;
+    color: #fff;
+    font-weight: 700;
+    width: fit-content;
+    border-radius: 5px;
+    margin-top: 30px;
+    font-size: 12px
+}
+
+.closeDiv {
+    /* padding: 10px; */
+    /* background: #feab40; */
+    color: #feab40;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: right;
+    position: absolute;
+    /* top: 20px; */
+    right: 0px;
+    padding: 20px;
+    padding-top: 0px
+}
+
+.imageNot {
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 20px
+}
+
+.transButton {
+    background: transparent;
+    padding-left: 15px;
+}
+
+.bar {
+    background: transparent
+}
+
+/* iPhone X */
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) {
+        .mgTopiPhoneX {
+            margin-top: 30px
+        }
+
+        .mgTopiPhoneX2 {
+            margin-top: 80px
+        }
+     }
+
+
+/* Animation */
+@keyframes fadein {
+from { opacity: 0; }
+to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.classFit {
+    width: fit-content
+}
+
+.typewriter h3 {
+    width: fit-content !important;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .1em solid #feab40; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; 
+    animation: 
+      typing 1.5s steps(20, end),
+      blink-caret .30s step-end infinite;
+}
+  
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #feab40; }
+}
+
+@keyframes flickerAnimation {
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-o-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-moz-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-webkit-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  .animate-flicker {
+      margin-top: 20px;
+     -webkit-animation: flickerAnimation 1.5s infinite;
+     -moz-animation: flickerAnimation 1.5s infinite;
+     -o-animation: flickerAnimation 1.5s infinite;
+      animation: flickerAnimation 1.5s infinite;
+  }

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "873291861478",
+    "firebase_url": "https://youper-challenge-app.firebaseio.com",
+    "project_id": "youper-challenge-app",
+    "storage_bucket": "youper-challenge-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:873291861478:android:393e44ab124d9710",
+        "android_client_info": {
+          "package_name": "com.youper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "873291861478-3u90c4eedlpmvn169blrcae1g0e4t42m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6Vanbb2CD-pdPpveULvneF0s9HfnYkKk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
